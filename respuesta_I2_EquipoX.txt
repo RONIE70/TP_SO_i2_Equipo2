@@ -7,10 +7,42 @@ Quiroga Paula - Villarreal María Gabriela - Mura Cecilia.
 Finalmente entre todos los integrantes contestan esta preguntas con sus palabras :
 
 a-¿Como actualizo mi repositorio, al estado que esté el repo que hice FORK?
+FORK - COPIA DEL REPOSITORIO HASTA EL MOMENTO QUE SE REALIZA
 
+ACTUALIZAR REPOSITORIO
+
+1 - HACER CLONE DEL REPOSITORIO (CODE GITHUB- COPIO)
+
+git clone code
+
+2 - HAGO REFERNCIA AL REPOSITORIO ORIGINAL
+
+git remote add upstream https..... (repositorio original)
+
+3 - OBTENER LOS DATOS DEL REPOSITORIO ORIGINAL
+
+git fetch upstream
+
+4 - CONFIRMAR QUE ESTOY EN LA RAMA MASTER / SINO...
+
+git checkout master
+
+5 - PARA VER COMMIT DE MI REPOSITORIO 
+
+git log
+
+TODAVIA HASTA ACA SOLO CAMBIOS EN LOCAL NO MUESTRA NADA EN GITHUB
+
+6 - PARA ACTUALIZAR MI FORK FUERZO... (SOLO AFECTA MI FORK NO DAÑA EL REPOSITORIO ORIGINAL)
+
+git push -f origin master (actualizo mi fork)
+
+7 - SI QUIERO VERIFICAR POR CONSOLA VUELVO A HACER
+
+git log
 
 b-¿Puede ALFA actualizar su FORK al estado del fork de GAMMA?
-
+No salvo que vuelva al FORK original
 
 c-¿Puede GAMMA actualizar su FORK al estado del fork de ALFA?
 
